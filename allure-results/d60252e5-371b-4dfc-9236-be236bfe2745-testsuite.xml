@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526236593863' stop='1526236622123'>
+    <name>Yandex mail</name>
+    <title>Yandex mail</title>
+    <test-cases>
+        <test-case start='1526236593863' status='passed' stop='1526236603863'>
+            <name>login / log out to / from the Ya mail</name>
+            <title>login / log out to / from the Ya mail</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236603863' status='passed' stop='1526236618968'>
+            <name>login with wrong password</name>
+            <title>login with wrong password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236618968' status='passed' stop='1526236622123'>
+            <name>login with wrong username</name>
+            <title>login with wrong username</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

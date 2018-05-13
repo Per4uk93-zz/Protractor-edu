@@ -2,47 +2,36 @@ let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
+const babel = require("babel-register");
+
+
+
 exports.config = {
-  framework: 'jasmine',
-  seleniumAddress: 'http://localhost:4444/wd/hub',
-  allScriptsTimeout: 20000,
-  getPageTimeout: 10000,
+    //directConnect: true,
+    framework: 'jasmine2',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
+    allScriptsTimeout: 90000,
+    getPageTimeout: 10000,
+    //SELENIUM_PROMISE_MANAGER: false,   
+    capabilities: {
+        browserName: 'chrome',
+    },
 
-    specs: ['C:/Users/Sergey/protractor/specs/*Spec.js'],
+    specs: [
+        'C:/Users/Sergey/protractor2/specs/*Spec.js',
 
-   /* suites:{
+    ],
 
-        yandex: 'C:/Users/Sergey/protractor/yandex/*Spec.js'
+    onPrepare:  function() {
 
+        browser.ignoreSynchronization=true;
 
-
-    },*/
-
-    
-
-
-onPrepare: function () {
-
-    browser.ignoreSynchronization=true;
-
-    browser.get('https://yandex.by/');
-
-    //browser.get('https://yandex.by/');
-
-    //browser.waitForAngularEnabled(false);
-
-    //browser.manage().timeouts().implicitlyWait(5000);
-
-    //browser.manage().window().maximize();
-
-  
-    jasmine.getEnv().addReporter(new SpecReporter({
+        jasmine.getEnv().addReporter(new SpecReporter({
         spec: {
             displayStacktrace: true,
         }
     }));
 
-  
     jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
 
         takeScreenshots: true,
@@ -51,56 +40,40 @@ onPrepare: function () {
         consolidate: false,
         consolidateAll: false,
 
-        savePath: 'C:/Users/Sergey/protractor/screenshots'
+        savePath: 'C:/Users/Sergey/protractor2/screenshots'
 
+    }));
 
-
+    var AllureReporter = require('jasmine-allure-reporter');
+    jasmine.getEnv().addReporter(new AllureReporter({
+      resultsDir: 'allure-results'
     }));
 
     beforeEach(() => {
         
         let matchers = require('jasmine-protractor-matchers')
         jasmine.addMatchers(matchers);
-      });
-
-  },
-
-
-  jasmineNodeOpts: {
-
-  showColors: true,
-   
-   print: function() {}
+     });
 },
 
-    multiCapabilities: [
+jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 90000,
+        print: function() {}
+},
+
+multiCapabilities: [
         //{'browserName': 'internet explorer'},
-        {'browserName': 'chrome'},
+        //{'browserName': 'chrome'},
         //{'browserName': 'firefox'}
     ],
 
     maxSessions: 1,
 
 
-/*capabilities: {
-  browserName: 'firefox',
+  /*chromeOptions: {
+     args: [ "--headless", "--disable-gpu", "--window-size=1366,768" ]
+  }*/
 
-  chromeOptions: {
-     //args: [ "--headless", "--disable-gpu", "--window-size=1366,768" ]
-  }
-},*/
-
-
-
-params: {
-
-    /*qsURL: 'https://qs.emfit.com',
-  qsDeviceSerial: 'per4uk93@gmail.com',
-  qsDevicePin: '63956',
-  qsAccountPassword: 'per4uk93',
-  qsAccountEmail: 'test'*/
-
-  
-},
 
 };

@@ -1,0 +1,110 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526238011730' stop='1526238049999'>
+    <name>Yandex navigation</name>
+    <title>Yandex navigation</title>
+    <test-cases>
+        <test-case start='1526238011730' status='passed' stop='1526238017259'>
+            <name>Navigate to Ya video</name>
+            <title>Navigate to Ya video</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526238017260' status='passed' stop='1526238020854'>
+            <name>Navigate to Ya images</name>
+            <title>Navigate to Ya images</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526238020854' status='passed' stop='1526238024269'>
+            <name>Navigate to Ya news</name>
+            <title>Navigate to Ya news</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526238024269' status='passed' stop='1526238027921'>
+            <name>Navigate to Ya maps</name>
+            <title>Navigate to Ya maps</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526238027921' status='failed' stop='1526238040358'>
+            <name>Navigate to Ya market</name>
+            <title>Navigate to Ya market</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: current URL is different of 'https://market.yandex.by/?clid=505&amp;utm_source=face_abovesearch&amp;utm_campaign=face_abovesearch'
+                Wait timed out after 5000ms</message>
+                <stack-trace>TimeoutError: current URL is different of 'https://market.yandex.by/?clid=505&amp;utm_source=face_abovesearch&amp;utm_campaign=face_abovesearch'
+                Wait timed out after 5000ms
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
+                    at ManagedPromise.invokeCallback_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at asyncRun (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)
+                From: Task: current URL is different of 'https://market.yandex.by/?clid=505&amp;utm_source=face_abovesearch&amp;utm_campaign=face_abovesearch'
+                    at scheduleWait (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2188:20)
+                    at ControlFlow.wait (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2517:12)
+                    at thenableWebDriverProxy.wait (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
+                    at run (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
+                    at ProtractorBrowser.to.(anonymous function) [as wait] (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
+                    at Object.waitForUrlToBeEqualToExpectedUrl (C:\Users\Sergey\protractor2\node_modules\protractor-helper\index.js:180:17)
+                    at Navigation.gotomarket (C:\Users\Sergey\protractor2\pages\navigation.js:62:20)
+                    at UserContext.&lt;anonymous> (C:\Users\Sergey\protractor2\specs\Yandex.navigation.Spec.js:28:20)
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new ManagedPromise (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                From: Task: Run it("Navigate to Ya market") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+                    at ControlFlow.emit (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+                    at ControlFlow.shutdown_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+                    at shutdownTask_.MicroTask (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\Sergey\protractor2\specs\Yandex.navigation.Spec.js:27:5)
+                    at addSpecsToSuite (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\Sergey\protractor2\specs\Yandex.navigation.Spec.js:6:1)
+                    at Module._compile (module.js:652:30)
+                    at loader (C:\Users\Sergey\protractor2\node_modules\babel-register\lib\node.js:144:5)
+                    at Object.require.extensions.(anonymous function) [as .js] (C:\Users\Sergey\protractor2\node_modules\babel-register\lib\node.js:154:7)
+                    at Module.load (module.js:565:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526238040358' status='passed' stop='1526238043376'>
+            <name>Navigate to Ya translator</name>
+            <title>Navigate to Ya translator</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526238043376' status='passed' stop='1526238049998'>
+            <name>Navigate to Ya music</name>
+            <title>Navigate to Ya music</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

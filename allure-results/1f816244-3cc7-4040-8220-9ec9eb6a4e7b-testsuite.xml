@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526236622127' stop='1526236654387'>
+    <name>Yandex navigation</name>
+    <title>Yandex navigation</title>
+    <test-cases>
+        <test-case start='1526236622127' status='passed' stop='1526236627461'>
+            <name>Navigate to Ya video</name>
+            <title>Navigate to Ya video</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236627461' status='passed' stop='1526236631366'>
+            <name>Navigate to Ya images</name>
+            <title>Navigate to Ya images</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236631367' status='passed' stop='1526236634699'>
+            <name>Navigate to Ya news</name>
+            <title>Navigate to Ya news</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236634699' status='passed' stop='1526236637764'>
+            <name>Navigate to Ya maps</name>
+            <title>Navigate to Ya maps</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236637765' status='passed' stop='1526236642848'>
+            <name>Navigate to Ya market</name>
+            <title>Navigate to Ya market</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236642848' status='passed' stop='1526236645321'>
+            <name>Navigate to Ya translator</name>
+            <title>Navigate to Ya translator</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526236645321' status='passed' stop='1526236654384'>
+            <name>Navigate to Ya music</name>
+            <title>Navigate to Ya music</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

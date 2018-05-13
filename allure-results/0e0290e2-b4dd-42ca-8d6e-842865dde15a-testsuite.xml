@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526236854560' stop='1526236859690'>
+    <name>Switch language to English</name>
+    <title>Switch language to English</title>
+    <test-cases>
+        <test-case start='1526236854560' status='failed' stop='1526236859688'>
+            <name>Check and change language</name>
+            <title>Check and change language</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: unknown error: Element &lt;span class="button__text">...&lt;/span> is not clickable at point (189, 334). Other element would receive the click: &lt;button class="button form__save button_theme_action button_size_m i-bem button_js_inited" data-bem="{&amp;quot;button&amp;quot;:{}}" role="button" type="submit">...&lt;/button>
+                  (Session info: chrome=66.0.3359.139)
+                  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64)</message>
+                <stack-trace>WebDriverError: unknown error: Element &lt;span class="button__text">...&lt;/span> is not clickable at point (189, 334). Other element would receive the click: &lt;button class="button form__save button_theme_action button_size_m i-bem button_js_inited" data-bem="{&amp;quot;button&amp;quot;:{}}" role="button" type="submit">...&lt;/button>
+                  (Session info: chrome=66.0.3359.139)
+                  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64)
+                    at Object.checkLegacyResponse (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at doSend.then.response (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30)
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)
+                From: Task: WebElement.click()
+                    at thenableWebDriverProxy.schedule (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at WebElement.schedule_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2010:25)
+                    at WebElement.click (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2092:17)
+                    at actionFn (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\element.js:89:44)
+                    at Array.map (&lt;anonymous>)
+                    at actionResults.getWebElements.then (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\element.js:461:65)
+                    at ManagedPromise.invokeCallback_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at asyncRun (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)Error
+                    at ElementArrayFinder.applyAction_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+                    at Object.clickWhenClickable (C:\Users\Sergey\protractor2\node_modules\protractor-helper\index.js:95:21)
+                    at Language.changelanguage (C:\Users\Sergey\protractor2\pages\language.js:44:20)
+                    at UserContext.&lt;anonymous> (C:\Users\Sergey\protractor2\specs\Yandex.language.Spec.js:15:18)
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new ManagedPromise (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                    at ControlFlow.promise (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+                    at schedulerExecute (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                From: Task: Run it("Check and change language") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+                    at C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+                    at ControlFlow.emit (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+                    at ControlFlow.shutdown_ (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+                    at shutdownTask_.MicroTask (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\Sergey\protractor2\specs\Yandex.language.Spec.js:12:5)
+                    at addSpecsToSuite (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\Sergey\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\Sergey\protractor2\specs\Yandex.language.Spec.js:6:1)
+                    at Module._compile (module.js:652:30)
+                    at loader (C:\Users\Sergey\protractor2\node_modules\babel-register\lib\node.js:144:5)
+                    at Object.require.extensions.(anonymous function) [as .js] (C:\Users\Sergey\protractor2\node_modules\babel-register\lib\node.js:154:7)
+                    at Module.load (module.js:565:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
