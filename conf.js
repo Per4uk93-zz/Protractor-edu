@@ -18,7 +18,7 @@ exports.config = {
     },
 
     specs: [
-        'C:/Users/Sergey/protractor2/specs/*Spec.js',
+        './specs/*Spec.js',
 
     ],
 
